@@ -1,4 +1,4 @@
-# 2021-06-29 23:58:25.913393
+# 2021-06-30 18:10:20.538894
 
 ## model name: ['wl_model_v3', 'sh_model_v3']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
@@ -20,53 +20,53 @@
        'class_9', 'da_0', 'da_1', 'da_2', 'da_3', 'da_4'],
       dtype='object')
 - is resample : True
-- Traing_Data.shape (watch_label)  : (1971734, 70)
-- Testing_Data.shape (watch_label) : (492934, 70)
-- Traing_Data.shape (is_share)  : (22816, 70)
-- Testing_Data.shape (is_share) : (5704, 70)
+- Traing_Data.shape (watch_label)  : (2037504, 70)
+- Testing_Data.shape (watch_label) : (509377, 70)
+- Traing_Data.shape (is_share)  : (22825, 70)
+- Testing_Data.shape (is_share) : (5707, 70)
 - Resampled class distribution (watch_label): 
-Counter({1: 554320, 9: 385082, 2: 312266, 0: 302869, 3: 217820, 4: 171292, 5: 142012, 8: 137834, 6: 124245, 7: 116928})
+Counter({1: 554320, 9: 385082, 0: 385082, 2: 312266, 3: 217820, 4: 171292, 5: 142012, 8: 137834, 6: 124245, 7: 116928})
 - Resampled class distribution (is_share): 
-Counter({1: 14266, 0: 14254})
+Counter({0: 14266, 1: 14266})
 
 ## Model Params
 - model params (watch_label) : 
 {'objective': 'multi:softmax', 'eta': 0.1, 'max_depth': 8, 'nthread': 8, 'num_class': 10, 'gpu_id': 0, 'tree_method': 'gpu_hist'}
 - model params (is_share) : 
-{'objective': 'binary:hinge', 'eta': 0.1, 'max_depth': 6, 'nthread': 4, 'gpu_id': 0, 'tree_method': 'gpu_hist'}
+{'objective': 'binary:hinge', 'eta': 0.1, 'max_depth': 7, 'nthread': 4, 'gpu_id': 0, 'tree_method': 'gpu_hist'}
 
 ## Model's Performance
-- Aucs (watch_label) : [0.59772762 0.58489796 0.50334059 0.5001315  0.50015731 0.50007303
- 0.50316653 0.5003208  0.50896805 0.59955772]
-- Weighted Aucs (watch_label) : 2.3581976737371133
-- Aucs (is_share) : [0.60912243 0.60912243]
+- Aucs (watch_label) : [0.62004039 0.58891123 0.50362896 0.50026904 0.50024575 0.50008881
+ 0.50302352 0.50024341 0.50804977 0.59886517]
+- Weighted Aucs (watch_label) : 2.357243306851747
+- Aucs (is_share) : [0.62160596 0.62160596]
 - Classification Report (watch_label) : 
 
               precision    recall  f1-score   support
 
-           0       0.33      0.27      0.30     60667
-           1       0.28      0.67      0.39    110396
-           2       0.28      0.01      0.02     62526
-           3       0.13      0.00      0.00     43744
-           4       0.17      0.00      0.00     34450
-           5       0.13      0.00      0.00     28316
-           6       0.32      0.01      0.01     24744
-           7       0.19      0.00      0.00     23339
-           8       0.31      0.02      0.04     27467
-           9       0.23      0.51      0.32     77285
+           0       0.32      0.38      0.35     77054
+           1       0.28      0.63      0.39    110718
+           2       0.28      0.01      0.02     62540
+           3       0.15      0.00      0.00     43797
+           4       0.21      0.00      0.00     33993
+           5       0.14      0.00      0.00     28208
+           6       0.30      0.01      0.01     24911
+           7       0.12      0.00      0.00     23415
+           8       0.28      0.02      0.04     27510
+           9       0.23      0.48      0.31     77231
 
-    accuracy                           0.27    492934
-   macro avg       0.24      0.15      0.11    492934
-weighted avg       0.25      0.27      0.18    492934
+    accuracy                           0.27    509377
+   macro avg       0.23      0.15      0.11    509377
+weighted avg       0.25      0.27      0.19    509377
 
 - Classification Report (is_share) : 
 
               precision    recall  f1-score   support
 
-           0       0.62      0.57      0.59      2845
-           1       0.60      0.65      0.62      2859
+           0       0.62      0.59      0.60      2804
+           1       0.62      0.66      0.64      2903
 
-    accuracy                           0.61      5704
-   macro avg       0.61      0.61      0.61      5704
-weighted avg       0.61      0.61      0.61      5704
+    accuracy                           0.62      5707
+   macro avg       0.62      0.62      0.62      5707
+weighted avg       0.62      0.62      0.62      5707
 
