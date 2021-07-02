@@ -1,6 +1,6 @@
 # 2021-06-30 18:10:20.538894
 
-## model name: ['wl_model_v3', 'sh_model_v3']
+## model name: ['wl_model_v4', 'sh_model_v4']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
 
 ## Data setup
