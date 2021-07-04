@@ -3,6 +3,8 @@
 ## model name: ['wl_model_v6', 'sh_model_v6']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
 
+## Comment: 此次没有剔除训练数据中未在视频特征中出现的视频，官方测评得分：0.993486
+
 ## Data setup
 - dataset.shape : (7353024, 72)
 - dataset.columns : Index(['user_id', 'video_id', 'age_0', 'age_1', 'age_2', 'age_3', 'age_4',
