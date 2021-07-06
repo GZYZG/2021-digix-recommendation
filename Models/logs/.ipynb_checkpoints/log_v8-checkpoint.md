@@ -1,10 +1,9 @@
-# 2021-07-04 21:02:26.748040
+# 2021-07-04 19:53:42.136672
 
 ## Comment: 
 模型配置与log_v7.md中的配置一致，更新了视频特征。
 由于pandas读取数据得问题，导致少读了624行视频信息，因此造成误认为行为数据中存在未见过得视频，实际上都出现过。
-除了基础特征，还是使用了user和video的统计特征，基础特征与统计特征合并作为训练数据。
-此次生成的提交是：submission-1625399147.csv。官方测评得分：1.818555😐
+此次生成的提交是：submission-1625399147.csv。官方测评得分：xxx😐
 
 ## model name: ['wl_model_v8', 'sh_model_v8']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models

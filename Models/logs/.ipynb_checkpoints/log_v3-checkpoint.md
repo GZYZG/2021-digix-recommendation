@@ -1,9 +1,6 @@
-# 2021-06-29 23:58:25.913393
-
-## model name: ['wl_model_v3', 'sh_model_v3']
+# 2021-06-29 23:45:15.650000
+# model name: ['wl_model_v3', 'sh_model_v3']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
-
-## Data setup
 - dataset.shape : (7308018, 70)
 - dataset.columns : Index(['age_0', 'age_1', 'age_2', 'age_3', 'age_4', 'age_5', 'age_6', 'age_7',
        'gender_0', 'gender_1', 'gender_2', 'gender_3', 'city_level_0',
@@ -20,28 +17,19 @@
        'class_9', 'da_0', 'da_1', 'da_2', 'da_3', 'da_4'],
       dtype='object')
 - is resample : True
-- Traing_Data.shape (watch_label)  : (1971734, 70)
-- Testing_Data.shape (watch_label) : (492934, 70)
-- Traing_Data.shape (is_share)  : (22816, 70)
-- Testing_Data.shape (is_share) : (5704, 70)
+- watch_label Traing_Data.shape : (1971734, 70)
+- watch_label Testing_Data.shape : (492934, 70)
+- is_share Traing_Data.shape : (22816, 70)
+- is_share Testing_Data.shape : (5704, 70)
 - Resampled class distribution (watch_label): 
-Counter({1: 554320, 9: 385082, 2: 312266, 0: 302869, 3: 217820, 4: 171292, 5: 142012, 8: 137834, 6: 124245, 7: 116928})
-- Resampled class distribution (is_share): 
-Counter({1: 14266, 0: 14254})
-
-## Model Params
-- model params (watch_label) : 
-{'objective': 'multi:softmax', 'eta': 0.1, 'max_depth': 8, 'nthread': 8, 'num_class': 10, 'gpu_id': 0, 'tree_method': 'gpu_hist'}
-- model params (is_share) : 
-{'objective': 'binary:hinge', 'eta': 0.1, 'max_depth': 6, 'nthread': 4, 'gpu_id': 0, 'tree_method': 'gpu_hist'}
-
-## Model's Performance
-- Aucs (watch_label) : [0.59772762 0.58489796 0.50334059 0.5001315  0.50015731 0.50007303
+Counter({1: 554320, 9: 385082, 2: 312266, 0: 302869, 3: 217820, 4: 171292, 5: 142012, 8: 137834, 6: 124245, 7: 116928})- Resampled class distribution (is_share): 
+Counter({1: 14266, 0: 14254})- model params (watch_label) : 
+{'objective': 'multi:softmax', 'eta': 0.1, 'max_depth': 8, 'nthread': 8, 'num_class': 10, 'gpu_id': 0, 'tree_method': 'gpu_hist'}- model params (is_share) : 
+{'objective': 'binary:hinge', 'eta': 0.1, 'max_depth': 6, 'nthread': 4, 'gpu_id': 0, 'tree_method': 'gpu_hist'}- Aucs (watch_label) : [0.59772762 0.58489796 0.50334059 0.5001315  0.50015731 0.50007303
  0.50316653 0.5003208  0.50896805 0.59955772]
 - Weighted Aucs (watch_label) : 2.3581976737371133
 - Aucs (is_share) : [0.60912243 0.60912243]
 - Classification Report (watch_label) : 
-
               precision    recall  f1-score   support
 
            0       0.33      0.27      0.30     60667
@@ -60,7 +48,6 @@ Counter({1: 14266, 0: 14254})
 weighted avg       0.25      0.27      0.18    492934
 
 - Classification Report (is_share) : 
-
               precision    recall  f1-score   support
 
            0       0.62      0.57      0.59      2845
