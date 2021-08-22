@@ -3,7 +3,7 @@
 ## Comment: 
 特征：基础特征+用户和视频的统计量特征。
 数据集划分：watch_label的测试集为1.0，is_share的测试集为1.0。
-此次生成的提交是：submission-1629551361.csv。官方测评得分：xxx😐
+此次生成的提交是：submission-1629551361.csv。官方测评得分：1.899124😐
 
 ## model name: ['wl_model_v17', 'sh_model_v17']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
