@@ -354,7 +354,7 @@ def metric_2_str(result):
 
 # 节约内存的一个标配函数
 def reduce_mem(df):
-    starttime = time.time()
+    starttime = time()
     numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     start_mem = df.memory_usage().sum() / 1024**2
     for col in df.columns:
