@@ -5,7 +5,7 @@
 数据集划分：watch_label的测试集为.18，is_share的测试集为.18。
 watch_label训练250rounds，早停=30，is_share训练250rounds，早停=60。
 。数据集划分时进行了shuffle和stratified。
-此次生成的提交是：../submission-1630259438.csv。官方测评得分：xxx😐
+此次生成的提交是：../submission-1630259438.csv。官方测评得分：1.871056😐
 
 ## model name: ['wl_model_v22', 'sh_model_v22']
 - model save path : /home/gzy/jupyter-lab/multi-objects-video-recommendation/Models
